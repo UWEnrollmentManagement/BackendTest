@@ -16,21 +16,12 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase
     /** @var string $appClass */
     protected $appClass;
 
-    public function __construct($name = null, $appClass, array $data = [], $dataName = '')
+    public function __construct($appClass, $faker, $name = null, array $data = [], $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
 
         $instance = $this;
-        $this->faker = new APIFaker(
-            [
-                'reference' => function($resourceType) use ($instance) {
-                    $response = $instance->doCreateRequiredOnly($resourceType);
-                    $responseData = $instance->responseToArray($response);
-
-                    return $responseData['data']['id'];
-                },
-            ]
-        );
+        $this->faker = $faker;
     }
 
     protected function doRequest($method, $path, $data = null)

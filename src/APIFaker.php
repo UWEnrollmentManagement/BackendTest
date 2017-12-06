@@ -16,11 +16,11 @@ class APIFaker
     protected $fieldsMap;
 
     /**
-     * FormsAPIFaker constructor.
+     * APIFaker constructor.
      */
-    public function __construct($fieldmap, array $extraFormatters = [])
+    public function __construct($fieldsmap, array $extraFormatters = [])
     {
-        $this->fieldmap = $fieldmap;
+        $this->fieldmaps = $fieldsmap;
         $this->faker = \Faker\Factory::create();
         $this->extraFormatters = $extraFormatters;
     }
