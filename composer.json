@@ -1,0 +1,21 @@
+{  "name": "uwdoem/rest-backend-test",
+    "description": "Respondor for the UWDOEM REST backend framework",
+    "license": "MIT",
+    "require": {
+        "slim/slim": "^3.8",
+        "uwdoem/rest-backend-interfaces": "^0.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*",
+        "uwdoem/standard": "^1.4",
+        "fzaninotto/faker": "^1.7",
+        "jaschilz/php-coverage-badger": "2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+    }
+}
