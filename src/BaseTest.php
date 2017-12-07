@@ -20,15 +20,12 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase
     {
         parent::__construct($name, $data, $dataName);
 
-        $instance = $this;
+        $this->appClass = $appClass;
         $this->faker = $faker;
     }
 
     protected function doRequest($method, $path, $data = null)
     {
-        $appClass = $this->appClass;
-        $app = $appClass::get();
-
         $vars = [
             'REQUEST_METHOD' => $method,
             'REQUEST_URI' => Uri::createFromString($path),
@@ -42,6 +39,8 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase
         if($data) {
             $request->getBody()->write(json_encode($data));   
         }
+        $appClass = $this->appClass;
+        $app = $appClass::get();
 
         $app->getContainer()['request'] = $request;
 
@@ -83,7 +82,7 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase
         $body = (string)$response->getBody();
 
         $responseData = json_decode($body, true);
-        $this->assertNotNull($responseData, "Response should be valid json. Instead was: " . (string)$body);
+        $this->assertNotNull($responseData, "Response should be valid json. Instead was: " . (string)$body . 'HERE!');
 
         return $responseData;
     }

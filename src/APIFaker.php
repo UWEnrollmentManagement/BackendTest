@@ -18,9 +18,9 @@ class APIFaker
     /**
      * APIFaker constructor.
      */
-    public function __construct($fieldsmap, array $extraFormatters = [])
+    public function __construct($fieldsMap, array $extraFormatters = [])
     {
-        $this->fieldmaps = $fieldsmap;
+        $this->fieldsMap = $fieldsMap;
         $this->faker = \Faker\Factory::create();
         $this->extraFormatters = $extraFormatters;
     }
