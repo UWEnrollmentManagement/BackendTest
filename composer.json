@@ -5,7 +5,7 @@
         "slim/slim": "^3.8",
         "fzaninotto/faker": "^1.7",
         "phpunit/phpunit": "5.4.*",
-        "jaschilz/php-coverage-badger": "2.*"
+        "jaschilz/php-coverage-badger": "2.*",
         "uwdoem/rest-backend-interfaces": "^0.0.4"
     },
     "require-dev": {
