@@ -9,7 +9,7 @@
         "uwdoem/rest-backend-interfaces": "^0.0.4"
     },
     "require-dev": {
-        "uwdoem/standard": "^1.4",
+        "uwdoem/standard": "^1.4"
     },
     "autoload": {
         "classmap": [
