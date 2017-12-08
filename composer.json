@@ -6,7 +6,7 @@
         "fzaninotto/faker": "^1.7",
         "phpunit/phpunit": "5.4.*",
         "jaschilz/php-coverage-badger": "2.*",
-        "uwdoem/rest-backend-interfaces": "^0.0.4"
+        "uwdoem/rest-backend-interfaces": "^0.0.7"
     },
     "require-dev": {
         "uwdoem/standard": "^1.4"
