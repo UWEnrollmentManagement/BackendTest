@@ -82,7 +82,7 @@ abstract class BaseTest extends \PHPUnit_Framework_TestCase
         $body = (string)$response->getBody();
 
         $responseData = json_decode($body, true);
-        $this->assertNotNull($responseData, "Response should be valid json. Instead was: " . (string)$body . 'HERE!');
+        $this->assertNotNull($responseData, "Response should be valid json. Instead was: " . (string)$body);
 
         return $responseData;
     }
