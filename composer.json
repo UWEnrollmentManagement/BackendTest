@@ -1,4 +1,4 @@
-{  "name": "uwdoem/rest-backend-test",
+{  "name": "uwdoem/backend-test",
     "description": "Respondor for the UWDOEM REST backend framework",
     "license": "MIT",
     "require": {
