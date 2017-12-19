@@ -1,6 +1,6 @@
 <?php
 
-namespace UWDOEM\REST\Backend\Test;
+namespace UWDOEM\Backend\Test;
 
 
 class FormsAPIFakerTest extends \PHPUnit_Framework_TestCase

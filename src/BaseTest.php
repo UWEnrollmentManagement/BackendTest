@@ -1,6 +1,6 @@
 <?php
 
-namespace UWDOEM\REST\Backend\Test;
+namespace UWDOEM\Backend\Test;
 
 use Slim\Http\Environment;
 use Slim\Http\Request;
